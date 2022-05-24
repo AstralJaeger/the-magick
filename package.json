@@ -4,14 +4,21 @@
   "description": "A wrapper for ImageMagick/GraphicsMagick for NodeJS written in TypeScript",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint -c .eslintrc.json --ext .ts ./src",
-    "lint:fix": "eslint src --ext .ts --fix",
-    "start": "ts-node ./src/index.ts",
-    "dev": "ts-node-dev --quiet ./src/index.ts"
+    "lint": "eslint -c .eslintrc.json --ext .ts lib",
+    "lint:fix": "eslint lib --ext .ts --fix",
+    "start": "ts-node lib/index.ts",
+    "dev": "ts-node-dev --quiet lib/index.ts"
   },
-  "keywords": ["ImageMagick", "GraphicsMagick", "Pictures", "Images", "Processing", "Wrapper"],
+  "keywords": [
+    "ImageMagick",
+    "GraphicsMagick",
+    "Pictures",
+    "Images",
+    "Processing",
+    "Wrapper"
+  ],
   "author": "Felix Hillebrand",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^8.12.0",
     "eslint-config-standard": "^16.0.3",
@@ -21,8 +28,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-unicorn": "^42.0.0",
     "ts-node": "^10.4.0",
-    "ts-node-dev": "^1.1.8"
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.7.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
